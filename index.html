@@ -7,19 +7,17 @@
   </head>
   <body style="text-align: center">
     <canvas id="unity-canvas" style="width: 960px; height: 600px; background: #231F20"></canvas>
-    <script src="Build/game.loader.js"></script>
+    <script src="Build/Retro-Space-Shooter.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/game.data",
-        frameworkUrl: "Build/game.framework.js",
-        codeUrl: "Build/game.wasm",
+        dataUrl: "Build/Retro-Space-Shooter.data",
+        frameworkUrl: "Build/Retro-Space-Shooter.framework.js",
+        codeUrl: "Build/Retro-Space-Shooter.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Online Game",
         productVersion: "1.0",
       });
     </script>
-
-    Hi
   </body>
 </html>
