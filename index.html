@@ -6,11 +6,10 @@
     <title>Unity WebGL Player | Online Game</title>
   </head>
   <body style="text-align: center">
-    <div style="height:20px; width: %UNITY_WIDTH%px; background: green;" onclick="unityInstance.SetFullscreen(1)"><b>Click here to make it full screen.</b></div>
     <canvas id="unity-canvas" style="width: 960px; height: 600px; background: #231F20"></canvas>
     <script src="Build/Retro-Space-Shooter.loader.js"></script>
     <script>
-      var unityInstance = createUnityInstance(document.querySelector("#unity-canvas"), {
+      createUnityInstance(document.querySelector("#unity-canvas"), {
         dataUrl: "Build/Retro-Space-Shooter.data",
         frameworkUrl: "Build/Retro-Space-Shooter.framework.js",
         codeUrl: "Build/Retro-Space-Shooter.wasm",
@@ -22,4 +21,3 @@
     </script>
   </body>
 </html>
-
